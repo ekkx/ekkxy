@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import { Hero } from "~/components/hero";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,10 +10,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="flex h-dvh items-center justify-center">
-      <Link to="https://github.com/ekkx" target="_blank" rel="noreferrer">
-        ekkx
-      </Link>
+    <div className="dark">
+      <Hero />
     </div>
   );
 }
